@@ -1,5 +1,5 @@
 {
-  background-color:purple
+  background-color:black
 }
 
 h1 {
@@ -7,6 +7,7 @@ h1 {
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   text-align: center;
   padding: 2rem;
+  border: green;
 }
 
 h2 {
