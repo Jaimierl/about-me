@@ -75,3 +75,4 @@ if (answerFive === 'yes' || answerFive === 'y'){
 ]
 
 alert('That was fun '+ username+ '! Here is some more information about me.);
+

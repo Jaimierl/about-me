@@ -2,7 +2,7 @@
 
 # About Me
 
-A site with interactive elements that introduces myself
+A site with interactive elements that introduces me and has two different types of guessing games with interactive loops and user feedback.
 
 ### Author : Jae Loney
 

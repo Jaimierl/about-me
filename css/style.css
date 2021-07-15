@@ -1,13 +1,15 @@
-{
-  background-color:black
+body {
+  background-color:black;
+  color: white;
 }
 
 h1 {
   font-size: 3rem;
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   text-align: center;
+  margin: 2rem;
   padding: 2rem;
-  border: green;
+  border: 5px double green;
 }
 
 h2 {
@@ -18,9 +20,23 @@ h2 {
 
 ul{
   list-style: disc: 
-  margin: 1rem;
+}
+
+ol{
+  margin-bottom: 2rem;
+}
+
+li{
+  margin-left: 3rem;
 }
 
 p{
   padding: 1rem;
+}
+
+footer{
+  background-image:url("/img/Lightning.png");
+  background-repeat:repeat-x;
+  background-size: 3rem;
+  text-align: center;
 }
