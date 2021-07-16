@@ -4,7 +4,7 @@
 let username = prompt('What is your name?');
 alert('Nice to meet you '+ username+ ' , I\'m Jae and this is a site About Me!');
 
-let answerOne = prompt('I live in New York City. Have you ever visited? Answer \'yes\' or \'no\'').toLowerCase;
+let answerOne = prompt('I live in New York City. Have you ever visited? Answer \'yes\' or \'no\'').toLowerCase();
 
 // console.log ('user answer to question 5: '+answerOne);
 
@@ -18,7 +18,7 @@ if (answerOne === 'yes' || answerOne === 'y'){
   alert('Please answer using yes or no')
 ];
 
-let answerTwo = prompt('Do you think I am a vegetarian? Answer \'yes\' or \'no\'').toLowerCase;
+let answerTwo = prompt('Do you think I am a vegetarian? Answer \'yes\' or \'no\'').toLowerCase();
 
 // console.log ('user answer to question 2: '+answerTwo);
 
@@ -32,7 +32,7 @@ if (answerTwo === 'yes' || answerTwo === 'y'){
   alert('Please answer using yes or no')
 ];
 
-let answerThree = prompt('Do you think I like learning languages? Answer \'yes\' or \'no\'').toLowerCase;
+let answerThree = prompt('Do you think I like learning languages? Answer \'yes\' or \'no\'').toLowerCase();
 
 // console.log ('user answer to question 3: '+answerThree);
 
@@ -46,7 +46,7 @@ if (answerThree === 'yes' || answerThree === 'y'){
   alert('Please answer using yes or no')
 ];
 
-let answerFour = prompt('Do you think I have been skydiving? Answer \'yes\' or \'no\'').toLowerCase;
+let answerFour = prompt('Do you think I have been skydiving? Answer \'yes\' or \'no\'').toLowerCase();
 
 // console.log ('user answer to question 4: '+answerFour);
 
@@ -60,7 +60,7 @@ if (answerFour === 'yes' || answerFour === 'y'){
   alert('Please answer using yes or no')
 ];
 
-let answerFive = prompt('Do you think I would like to connect with you on LinkedIn? Answer \'yes\' or \'no\'').toLowerCase;
+let answerFive = prompt('Do you think I would like to connect with you on LinkedIn? Answer \'yes\' or \'no\'').toLowerCase();
 
 // console.log ('user answer to question 5: '+answerFive);
 
