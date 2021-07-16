@@ -74,5 +74,5 @@ if (answerFive === 'yes' || answerFive === 'y'){
   alert('Please answer using yes or no')
 ]
 
-alert('That was fun '+ username+ '! Here is some more information about me.);
+alert('That was fun '+ username+ '! Here is some more information about me.)
 
