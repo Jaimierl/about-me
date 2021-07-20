@@ -2,7 +2,7 @@
 
 //Get the users name so we can greet them greet the user
 let username = prompt('What is your name?');
-alert('Nice to meet you '+ username+ ' , I\'m Jae and this is a site About Me!')
+alert('Nice to meet you '+ username+ ' , I\'m Jae and this is a site About Me!');
 
 let score = 0;
 // console.log ('user answer to question 5: '+answerOne);
@@ -127,30 +127,71 @@ for (let i=0; i<4; i++){
 alert('The answer was ' +randomNumber +'!');
 
 // Question 7
+// broken code:
+// let attempts = 7;
+// for (let i = 0; i < attempts; i++) {
+//   console.log(`For loop: You have ${attempts - i - 1} attempts remaining.`);
+//   for (let j = 0; j < myFavColors.length; j++) {
+//     if (userResponse === myFavColors[j]) {
+//       console.log('You are correct!');
+//       // something that will stop the loop if it is correct.
+//     }
+//     else{
+//       console.log ('try again')
+//     }
+//   }
+// }
 
-// See class for loop about cycling through array elements. Show all elements without using join().
+// broken code take 2
+// for (let i=0; i<6; i++){
+//   console.log (answerSeven);
+//   console.log(i);
+//   for (let j = 0; j<placesIveVisited.length; j++) {
+//     if (answerSeven === placesIveVisited[j]) {
+//       alert('You are correct!');
+//       // score = score+1;
+//       break;
+//     } else {
+//       alert ('Not yet! I\'ll add that to my list though! Guess Again - You have ' +(6-i-1)+' attempts remaining');
+//     }
+//   }
+//   i=(i-1);
+// }
 
-let placesIveVisited = ['washington dc', 'new york', 'ecuador', 'costa rica', 'trinidad and tobago', 'mexico', 'italy', 'belgium', 'france', 'mexico'];
+let placesIveVisited = ['washington dc', 'new york', 'ecuador', 'costa rica', 'trinidad and tobago', 'mexico', 'italy', 'belgium', 'france', 'dominican republic'];
+let answerSeven = prompt('Guess a place I have visited').toLowerCase();
+let correctAnswer = false;
 
-for (let i=0; i<6; i++){
-  let answerSeven = prompt('Guess a place I have visited').toLowerCase();
-  console.log(answerSeven);
-  // console.log(placesIveVisited[i]);
-  if (answerSeven in placesIveVisited){
-    alert('You are correct!');
-    score = score+1;
+for (let i = 0; i < 6; i++) {
+  // console.log (`User Answer: ${answerSeven}`);
+  // console.log (`Array: ${placesIveVisited}`);
+  // console.log (`Correct Answer - boolean starts as false: ${correctAnswer}`);
+  for (let j = 0; j < placesIveVisited.length; j++) {
+    // console.log (`Array in the J loop: ${placesIveVisited[j]}`);
+    if (answerSeven === placesIveVisited[j]) {
+      alert('You are correct!');
+      correctAnswer = true;
+      score = score+1;
+      break;
+    }
+  }
+  if (correctAnswer === true){
     break;
   } else {
-    alert ('Not yet! I\'ll add that to my list though! Guess Again - You have ' +(6-i)+' attempts remaining');
+    alert (`Guess again! You have ${7 - i - 1} attempts remaining.`);
+    answerSeven = prompt ('Guess a place I have visited').toLowerCase();
   }
 }
-let stringPlacesVisited = toString(placesIveVisited);
-alert (stringPlacesVisited);
-// alert ('I have been to ' + toString(placesIveVisited));
-// Fix, see note above
+
+let placesList = '';
+for (let i=0; i<1; i++){
+  placesList += `${placesIveVisited}`;
+}
+
+alert(`I've been to ${placesList} !`);
+
 
 // Thing 8
 alert ('You got '+ score +' questions right!');
 
 alert('That was fun '+ username+ '! Here is some more information about me.');
-
