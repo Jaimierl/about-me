@@ -84,20 +84,23 @@ function questionFour() {
 questionFour();
 
 // Question Five
-let answerFive = prompt('Do you think I would like to connect with you on LinkedIn? Answer \'yes\' or \'no\'').toLowerCase();
+function questionFive() {
+  let answerFive = prompt('Do you think I would like to connect with you on LinkedIn? Answer \'yes\' or \'no\'').toLowerCase();
 
-while (answerFive !== 'yes' || answerFive !== 'y' || answerFive !=='no' || answerFive !=='n'){
-  if (answerFive === 'yes' || answerFive === 'y'){
-    alert ('Correct - I absolutely would! If you would like to connect with me too the link will be at the bottom of the page.');
-    score = score+1;
-    break;
-  } else if (answerFive ==='no' || answerFive ==='n'){
-    alert ('I would love to connect with you! If you would like to connect with me too the link will be at the bottom of the page.');
-    break;
+  while (answerFive !== 'yes' || answerFive !== 'y' || answerFive !=='no' || answerFive !=='n'){
+    if (answerFive === 'yes' || answerFive === 'y'){
+      alert ('Correct - I absolutely would! If you would like to connect with me too the link will be at the bottom of the page.');
+      score = score+1;
+      break;
+    } else if (answerFive ==='no' || answerFive ==='n'){
+      alert ('I would love to connect with you! If you would like to connect with me too the link will be at the bottom of the page.');
+      break;
+    }
+    answerFive = prompt ('Please answer using yes or no. Do you think I would like to connect with you on LinkedIn?').toLowerCase();
   }
-  answerFive = prompt ('Please answer using yes or no. Do you think I would like to connect with you on LinkedIn?').toLowerCase();
 }
 
+questionFive();
 
 // Question 6
 let randomNumber = (Math.floor(Math.random() * 101));
