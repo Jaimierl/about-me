@@ -25,6 +25,8 @@ while (answerOne !== 'yes' || answerOne !== 'y' || answerOne !=='no' || answerOn
 
 questionOne();
 // Question Two
+
+function questionTwo() {
 let answerTwo = prompt('Do you think I am a vegetarian? Answer \'yes\' or \'no\'').toLowerCase();
 
 while (answerTwo !== 'yes' || answerTwo !== 'y' || answerTwo !=='no' || answerTwo !=='n'){
@@ -38,6 +40,9 @@ while (answerTwo !== 'yes' || answerTwo !== 'y' || answerTwo !=='no' || answerTw
   }
   answerTwo = prompt ('Please answer using yes or no. Do you think I am a vegetarian? Answer \'yes\' or \'no\'').toLowerCase();
 }
+}
+
+questionTwo();
 
 // Question Three
 let answerThree = prompt('Do you think I like learning languages? Answer \'yes\' or \'no\'').toLowerCase();
