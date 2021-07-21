@@ -7,6 +7,7 @@ alert('Nice to meet you '+ username+ ' , I\'m Jae and this is a site About Me!')
 let score = 0;
 
 // Question 1
+function questionOne(){
 let answerOne = prompt('I live in New York City. Have you ever visited? Answer \'yes\' or \'no\'').toLowerCase();
 
 while (answerOne !== 'yes' || answerOne !== 'y' || answerOne !=='no' || answerOne !=='n'){
@@ -20,7 +21,9 @@ while (answerOne !== 'yes' || answerOne !== 'y' || answerOne !=='no' || answerOn
   }
   answerOne = prompt ('Please answer using yes or no. I live in New York City. Have you ever visited? Answer \'yes\' or \'no\'').toLowerCase();
 }
+}
 
+questionOne();
 // Question Two
 let answerTwo = prompt('Do you think I am a vegetarian? Answer \'yes\' or \'no\'').toLowerCase();
 
