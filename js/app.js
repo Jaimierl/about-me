@@ -5,14 +5,12 @@ let username = prompt('What is your name?');
 alert('Nice to meet you '+ username+ ' , I\'m Jae and this is a site About Me!');
 
 let score = 0;
-// console.log ('user answer to question 5: '+answerOne);
 
-// Check the if the answer to question One is correct/valid
+// Question 1
 let answerOne = prompt('I live in New York City. Have you ever visited? Answer \'yes\' or \'no\'').toLowerCase();
 
 while (answerOne !== 'yes' || answerOne !== 'y' || answerOne !=='no' || answerOne !=='n'){
   if (answerOne === 'yes' || answerOne === 'y'){
-    // console.log ('That\'s great! Maybe we were here at the same time!')
     alert ('That\'s great! Maybe we were here at the same time!');
     score = score+1;
     break;
@@ -23,15 +21,11 @@ while (answerOne !== 'yes' || answerOne !== 'y' || answerOne !=='no' || answerOn
   answerOne = prompt ('Please answer using yes or no. I live in New York City. Have you ever visited? Answer \'yes\' or \'no\'').toLowerCase();
 }
 
-
+// Question Two
 let answerTwo = prompt('Do you think I am a vegetarian? Answer \'yes\' or \'no\'').toLowerCase();
 
-// console.log ('user answer to question 2: '+answerTwo);
-
-// Check the if the answer to question Two is correct/valid
 while (answerTwo !== 'yes' || answerTwo !== 'y' || answerTwo !=='no' || answerTwo !=='n'){
   if (answerTwo === 'yes' || answerTwo === 'y'){
-    // console.log ('You are correct! Well, mostly, I am a pescatarian which means I only eat seafood')
     alert ('You are correct! Well, mostly, I am a pescatarian which means I only eat seafood');
     score = score+1;
     break;
@@ -42,14 +36,11 @@ while (answerTwo !== 'yes' || answerTwo !== 'y' || answerTwo !=='no' || answerTw
   answerTwo = prompt ('Please answer using yes or no. Do you think I am a vegetarian? Answer \'yes\' or \'no\'').toLowerCase();
 }
 
+// Question Three
 let answerThree = prompt('Do you think I like learning languages? Answer \'yes\' or \'no\'').toLowerCase();
 
-// console.log ('user answer to question 3: '+answerThree);
-
-// Check the if the answer to question Three is correct/valid
 while (answerThree !== 'yes' || answerThree !== 'y' || answerThree !=='no' || answerThree !=='n'){
   if (answerThree === 'yes' || answerThree === 'y'){
-    // console.log ('You\'re right, I love learning languages! I speak some Spanish and French and even a bit of Sign Language!')  
     alert ('You\'re right, I love learning languages! I speak some Spanish and French and even a bit of Sign Language!');
     score = score+1;
     break;
@@ -60,14 +51,11 @@ while (answerThree !== 'yes' || answerThree !== 'y' || answerThree !=='no' || an
   answerThree = prompt ('Please answer using yes or no. Do you think I like learning languages? Answer \'yes\' or \'no\'').toLowerCase();
 }
 
+// Question Four
 let answerFour = prompt('Do you think I have been skydiving? Answer \'yes\' or \'no\'').toLowerCase();
 
-// console.log ('user answer to question 4: '+answerFour);
-
-// Check the if the answer to question Five is correct/valid
 while (answerFour !== 'yes' || answerFour !== 'y' || answerFour !=='no' || answerFour !=='n'){
   if (answerFour === 'yes' || answerFour === 'y'){
-    // console.log ('You are correct! I have been skydiving.')
     alert ('You are correct! I have been skydiving.');
     score = score+1;
     break;
@@ -78,15 +66,11 @@ while (answerFour !== 'yes' || answerFour !== 'y' || answerFour !=='no' || answe
   answerFour = prompt ('Please answer using yes or no. Do you think I have been skydiving? Answer \'yes\' or \'no\'').toLowerCase();
 }
 
+// Question Five
 let answerFive = prompt('Do you think I would like to connect with you on LinkedIn? Answer \'yes\' or \'no\'').toLowerCase();
-
-// console.log ('user answer to question 5: '+answerFive);
-
-// Check the if the answer to question Five is correct/valid
 
 while (answerFive !== 'yes' || answerFive !== 'y' || answerFive !=='no' || answerFive !=='n'){
   if (answerFive === 'yes' || answerFive === 'y'){
-    // console.log ('Correct - I absolutely would! If you would like to connect with me too the link will be at the bottom of the page.')
     alert ('Correct - I absolutely would! If you would like to connect with me too the link will be at the bottom of the page.');
     score = score+1;
     break;
@@ -101,8 +85,6 @@ while (answerFive !== 'yes' || answerFive !== 'y' || answerFive !=='no' || answe
 // Question 6
 let randomNumber = (Math.floor(Math.random() * 101));
 let attemptSix = 4;
-// let randomNumber = (50);
-console.log(randomNumber);
 
 for (let i=0; i<4; i++){
   let answerSixString = prompt('Guess a number between 0-100');
@@ -127,47 +109,15 @@ for (let i=0; i<4; i++){
 alert('The answer was ' +randomNumber +'!');
 
 // Question 7
-// broken code:
-// let attempts = 7;
-// for (let i = 0; i < attempts; i++) {
-//   console.log(`For loop: You have ${attempts - i - 1} attempts remaining.`);
-//   for (let j = 0; j < myFavColors.length; j++) {
-//     if (userResponse === myFavColors[j]) {
-//       console.log('You are correct!');
-//       // something that will stop the loop if it is correct.
-//     }
-//     else{
-//       console.log ('try again')
-//     }
-//   }
-// }
-
-// broken code take 2
-// for (let i=0; i<6; i++){
-//   console.log (answerSeven);
-//   console.log(i);
-//   for (let j = 0; j<placesIveVisited.length; j++) {
-//     if (answerSeven === placesIveVisited[j]) {
-//       alert('You are correct!');
-//       // score = score+1;
-//       break;
-//     } else {
-//       alert ('Not yet! I\'ll add that to my list though! Guess Again - You have ' +(6-i-1)+' attempts remaining');
-//     }
-//   }
-//   i=(i-1);
-// }
 
 let placesIveVisited = ['washington dc', 'new york', 'ecuador', 'costa rica', 'trinidad and tobago', 'mexico', 'italy', 'belgium', 'france', 'dominican republic'];
 let answerSeven = prompt('Guess a place I have visited').toLowerCase();
 let correctAnswer = false;
 
 for (let i = 0; i < 6; i++) {
-  // console.log (`User Answer: ${answerSeven}`);
-  // console.log (`Array: ${placesIveVisited}`);
-  // console.log (`Correct Answer - boolean starts as false: ${correctAnswer}`);
+
   for (let j = 0; j < placesIveVisited.length; j++) {
-    // console.log (`Array in the J loop: ${placesIveVisited[j]}`);
+
     if (answerSeven === placesIveVisited[j]) {
       alert('You are correct!');
       correctAnswer = true;
@@ -175,6 +125,7 @@ for (let i = 0; i < 6; i++) {
       break;
     }
   }
+
   if (correctAnswer === true){
     break;
   } else {
@@ -191,7 +142,7 @@ for (let i=0; i<1; i++){
 alert(`I've been to ${placesList} !`);
 
 
-// Thing 8
+// Question 8
 alert ('You got '+ score +' questions right!');
 
 alert('That was fun '+ username+ '! Here is some more information about me.');
