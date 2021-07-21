@@ -171,7 +171,10 @@ function questionSeven() {
 questionSeven();
 
 // // Question 8
+function questionEight() {
+  alert ('You got '+ score +' questions right!');
 
-alert ('You got '+ score +' questions right!');
+  alert('That was fun '+ username+ '! Here is some more information about me.');
+}
 
-alert('That was fun '+ username+ '! Here is some more information about me.');
+questionEight();
