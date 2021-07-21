@@ -45,6 +45,7 @@ while (answerTwo !== 'yes' || answerTwo !== 'y' || answerTwo !=='no' || answerTw
 questionTwo();
 
 // Question Three
+function questionThree() {
 let answerThree = prompt('Do you think I like learning languages? Answer \'yes\' or \'no\'').toLowerCase();
 
 while (answerThree !== 'yes' || answerThree !== 'y' || answerThree !=='no' || answerThree !=='n'){
@@ -58,6 +59,9 @@ while (answerThree !== 'yes' || answerThree !== 'y' || answerThree !=='no' || an
   }
   answerThree = prompt ('Please answer using yes or no. Do you think I like learning languages? Answer \'yes\' or \'no\'').toLowerCase();
 }
+}
+
+questionThree();
 
 // Question Four
 let answerFour = prompt('Do you think I have been skydiving? Answer \'yes\' or \'no\'').toLowerCase();
