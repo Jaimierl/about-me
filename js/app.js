@@ -8,75 +8,80 @@ let score = 0;
 
 // Question 1
 function questionOne(){
-let answerOne = prompt('I live in New York City. Have you ever visited? Answer \'yes\' or \'no\'').toLowerCase();
+  let answerOne = prompt('I live in New York City. Have you ever visited? Answer \'yes\' or \'no\'').toLowerCase();
 
-while (answerOne !== 'yes' || answerOne !== 'y' || answerOne !=='no' || answerOne !=='n'){
-  if (answerOne === 'yes' || answerOne === 'y'){
-    alert ('That\'s great! Maybe we were here at the same time!');
-    score = score+1;
-    break;
-  } else if (answerOne ==='no' || answerOne ==='n'){
-    alert ('It\'s really one of a kind. If you get a chance you should check it out!');
-    break;
+  while (answerOne !== 'yes' || answerOne !== 'y' || answerOne !=='no' || answerOne !=='n'){
+    if (answerOne === 'yes' || answerOne === 'y'){
+      alert ('That\'s great! Maybe we were here at the same time!');
+      score = score+1;
+      break;
+    } else if (answerOne ==='no' || answerOne ==='n'){
+      alert ('It\'s really one of a kind. If you get a chance you should check it out!');
+      break;
+    }
+    answerOne = prompt ('Please answer using yes or no. I live in New York City. Have you ever visited? Answer \'yes\' or \'no\'').toLowerCase();
   }
-  answerOne = prompt ('Please answer using yes or no. I live in New York City. Have you ever visited? Answer \'yes\' or \'no\'').toLowerCase();
-}
 }
 
 questionOne();
 // Question Two
 
 function questionTwo() {
-let answerTwo = prompt('Do you think I am a vegetarian? Answer \'yes\' or \'no\'').toLowerCase();
+  let answerTwo = prompt('Do you think I am a vegetarian? Answer \'yes\' or \'no\'').toLowerCase();
 
-while (answerTwo !== 'yes' || answerTwo !== 'y' || answerTwo !=='no' || answerTwo !=='n'){
-  if (answerTwo === 'yes' || answerTwo === 'y'){
-    alert ('You are correct! Well, mostly, I am a pescatarian which means I only eat seafood');
-    score = score+1;
-    break;
-  } else if (answerTwo ==='no' || answerTwo ==='n'){
-    alert ('I guess you\'re technically correct. I am a pescatarian which means I only eat seafood');
-    break;
+  while (answerTwo !== 'yes' || answerTwo !== 'y' || answerTwo !=='no' || answerTwo !=='n'){
+    if (answerTwo === 'yes' || answerTwo === 'y'){
+      alert ('You are correct! Well, mostly, I am a pescatarian which means I only eat seafood');
+      score = score+1;
+      break;
+    } else if (answerTwo ==='no' || answerTwo ==='n'){
+      alert ('I guess you\'re technically correct. I am a pescatarian which means I only eat seafood');
+      break;
+    }
+    answerTwo = prompt ('Please answer using yes or no. Do you think I am a vegetarian? Answer \'yes\' or \'no\'').toLowerCase();
   }
-  answerTwo = prompt ('Please answer using yes or no. Do you think I am a vegetarian? Answer \'yes\' or \'no\'').toLowerCase();
-}
 }
 
 questionTwo();
 
 // Question Three
 function questionThree() {
-let answerThree = prompt('Do you think I like learning languages? Answer \'yes\' or \'no\'').toLowerCase();
+  let answerThree = prompt('Do you think I like learning languages? Answer \'yes\' or \'no\'').toLowerCase();
 
-while (answerThree !== 'yes' || answerThree !== 'y' || answerThree !=='no' || answerThree !=='n'){
-  if (answerThree === 'yes' || answerThree === 'y'){
-    alert ('You\'re right, I love learning languages! I speak some Spanish and French and even a bit of Sign Language!');
-    score = score+1;
-    break;
-  } else if (answerThree ==='no' || answerThree ==='n'){
-    alert ('Actually I love learning languages, it\'s really fun!');
-    break;
+  while (answerThree !== 'yes' || answerThree !== 'y' || answerThree !=='no' || answerThree !=='n'){
+    if (answerThree === 'yes' || answerThree === 'y'){
+      alert ('You\'re right, I love learning languages! I speak some Spanish and French and even a bit of Sign Language!');
+      score = score+1;
+      break;
+    } else if (answerThree ==='no' || answerThree ==='n'){
+      alert ('Actually I love learning languages, it\'s really fun!');
+      break;
+    }
+    answerThree = prompt ('Please answer using yes or no. Do you think I like learning languages? Answer \'yes\' or \'no\'').toLowerCase();
   }
-  answerThree = prompt ('Please answer using yes or no. Do you think I like learning languages? Answer \'yes\' or \'no\'').toLowerCase();
-}
 }
 
 questionThree();
 
 // Question Four
-let answerFour = prompt('Do you think I have been skydiving? Answer \'yes\' or \'no\'').toLowerCase();
 
-while (answerFour !== 'yes' || answerFour !== 'y' || answerFour !=='no' || answerFour !=='n'){
-  if (answerFour === 'yes' || answerFour === 'y'){
-    alert ('You are correct! I have been skydiving.');
-    score = score+1;
-    break;
-  } else if (answerFour ==='no' || answerFour ==='n'){
-    alert ('Whelp, that\'s not quite right - I have been skydiving!');
-    break;
+function questionFour() {
+  let answerFour = prompt('Do you think I have been skydiving? Answer \'yes\' or \'no\'').toLowerCase();
+
+  while (answerFour !== 'yes' || answerFour !== 'y' || answerFour !=='no' || answerFour !=='n'){
+    if (answerFour === 'yes' || answerFour === 'y'){
+      alert ('You are correct! I have been skydiving.');
+      score = score+1;
+      break;
+    } else if (answerFour ==='no' || answerFour ==='n'){
+      alert ('Whelp, that\'s not quite right - I have been skydiving!');
+      break;
+    }
+    answerFour = prompt ('Please answer using yes or no. Do you think I have been skydiving? Answer \'yes\' or \'no\'').toLowerCase();
   }
-  answerFour = prompt ('Please answer using yes or no. Do you think I have been skydiving? Answer \'yes\' or \'no\'').toLowerCase();
 }
+
+questionFour();
 
 // Question Five
 let answerFive = prompt('Do you think I would like to connect with you on LinkedIn? Answer \'yes\' or \'no\'').toLowerCase();
