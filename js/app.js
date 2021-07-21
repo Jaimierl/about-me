@@ -7,6 +7,7 @@ alert('Nice to meet you '+ username+ ' , I\'m Jae and this is a site About Me!')
 let score = 0;
 
 // Question 1
+
 function questionOne(){
   let answerOne = prompt('I live in New York City. Have you ever visited? Answer \'yes\' or \'no\'').toLowerCase();
 
@@ -24,6 +25,7 @@ function questionOne(){
 }
 
 questionOne();
+
 // Question Two
 
 function questionTwo() {
@@ -45,6 +47,7 @@ function questionTwo() {
 questionTwo();
 
 // Question Three
+
 function questionThree() {
   let answerThree = prompt('Do you think I like learning languages? Answer \'yes\' or \'no\'').toLowerCase();
 
@@ -84,6 +87,7 @@ function questionFour() {
 questionFour();
 
 // Question Five
+
 function questionFive() {
   let answerFive = prompt('Do you think I would like to connect with you on LinkedIn? Answer \'yes\' or \'no\'').toLowerCase();
 
@@ -103,9 +107,11 @@ function questionFive() {
 questionFive();
 
 // Question 6
+
 function questionSix() {
   let randomNumber = (Math.floor(Math.random() * 101));
   let attemptSix = 4;
+  console.log (randomNumber);
 
   for (let i=0; i<4; i++){
     let answerSixString = prompt('Guess a number between 0-100');
@@ -171,10 +177,14 @@ function questionSeven() {
 questionSeven();
 
 // // Question 8
+
 function questionEight() {
   alert ('You got '+ score +' questions right!');
-
-  alert('That was fun '+ username+ '! Here is some more information about me.');
 }
 
 questionEight();
+
+alert('That was fun '+ username+ '! Here is some more information about me.');
+
+
+
