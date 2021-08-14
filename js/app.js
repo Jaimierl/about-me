@@ -106,7 +106,7 @@ function questionFive() {
 
 questionFive();
 
-// Question 6
+// Question 6 
 
 function questionSix() {
   let randomNumber = (Math.floor(Math.random() * 101));
@@ -188,3 +188,4 @@ alert('That was fun '+ username+ '! Here is some more information about me.');
 
 
 
+// SSH Test
